@@ -1,9 +1,9 @@
 import { call, put, takeEvery } from "redux-saga/effects";
 import { clientTypes } from "../actions/clientTypes";
-import * as api from "../../../../../common/api/Api";
+import * as api from "../../../../common/api/Api";
 import { setUsersDetails } from "../actions/clientActions";
-import { setAppLoader } from "../../../../../common/redux/commonActions/commonActions";
-import sentToastMessage from "../../../../../common/Toast/Toast";
+import { setAppLoader } from "../../../../common/redux/commonActions/commonActions";
+import sentToastMessage from "../../../../common/Toast/Toast";
 
 function* getUsers() {
   console.log("Client watcher !");

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Layout from "../../../../common/components/Layout/Layout";
+import Layout from "../../../common/components/Layout/Layout";
 import { getUsersDetails } from "../redux/actions/clientActions";
 
 function ClientDashboard() {
@@ -16,7 +16,6 @@ function ClientDashboard() {
       {/* Client Dashboard !<button onClick={getUsers}>Get ussers</button> */}
       <ul>
         {users.map((user, index) => {
-          // debugger;
           return (
             <>
               <li key={`user-${index}`}>UserName: === {user.username}</li>
